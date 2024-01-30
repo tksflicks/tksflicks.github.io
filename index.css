@@ -1,0 +1,126 @@
+:root{
+    
+}
+
+html,body{
+    position: relative;
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #F6F9F8;
+}
+
+.header_wrap{
+    position: relative;
+
+}
+
+.section{
+    width: 100%;
+    margin:0;
+    position: relative;
+}
+
+#p1{
+
+}
+
+.nav_bar{
+    position: relative;
+    padding: 3em 7em;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.nav_wrap_logo{
+    margin: 0 1.25em;
+}
+.nav_wrap{
+    text-align: right;
+    margin-left:auto;
+}
+.main_nav_list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+a > * {
+    margin:0;
+}
+
+.header_nav_element{
+    margin: 0 1em;
+}
+
+.header_nav_element > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+#insta{
+    width: 1.25em;
+    align-items: center;
+    display: flex;
+}
+
+#logo{
+    width: 5em;
+    align-items: center;
+    display: flex;
+}
+
+.gallery_cont{
+    padding: 0 10em;
+    box-sizing: border-box;
+
+}
+
+.img_group > div {
+    display: grid;
+}
+
+.img_group{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+
+}
+
+.disp_img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.img_wrapper{
+    padding: 1em;
+}
+
+.landscape{
+    width: 58%;
+}
+
+.portrait{
+    width: 42%;
+}
+
+#portsp{
+    padding: 8em 0;
+}
+
+#landsp{
+    padding: 4em 0;
+}
+
+
+#smaller_land{
+    display: flex;
+}
