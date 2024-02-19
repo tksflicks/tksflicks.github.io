@@ -1,0 +1,104 @@
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #2e335c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #192057;
+  }
+  
+  .container {
+  }
+
+
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 2em 0;
+    padding: 0 1em;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 1em;
+  }
+  .column > h1 {
+    font-size: 3em;
+    margin:0 0 1em 0;
+  }
+  .column p {
+    margin: 0;
+    vertical-align: middle;
+    width: 100%;
+    font-size: 1.5em;
+
+  }
+  p > strong {
+    font-weight: 600;
+  }
+
+@media screen and (max-width: 950px) {
+
+    .nav_bar{
+        padding: 1em 2em;
+    }
+    .section{
+        padding: 0 1em;
+    }
+
+    #logo{
+        width: 5em;
+    }
+
+    .header_nav_element > a {
+        font-size: 1.0em;
+    }
+}
+  
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+        padding:2em 0em;
+    }
+    .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        margin: 2em 0;
+        padding: 0 1em;
+      }
+
+    .section{
+        padding: 0 1em;
+    }
+
+    #logo{
+        width: 4em;
+    }
+    .header_nav_element > a {
+        font-size: 0.9em;
+    }
+}

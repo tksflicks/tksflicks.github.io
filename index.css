@@ -4,6 +4,9 @@
 
 *{
     box-sizing: border-box;
+    font-family: "mr-eaves-modern", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 html,body{
@@ -15,10 +18,8 @@ html,body{
     /* font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal; */
-    font-family: "mr-eaves-modern", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    background-color: #F6F9F8;
+
+    background-color: #f4efec;
 }
 
 .header_wrap{
@@ -52,6 +53,7 @@ html,body{
     flex:1 1 0px;
 }
 .nav_wrap{
+    
 }
 .nav_socials{
     text-align: right;
@@ -183,6 +185,20 @@ a > * {
       flex: 50%;
       max-width: 50%;
     }
+    .nav_bar{
+        padding: 1em 2em;
+    }
+    .section{
+        padding: 0 1em;
+    }
+
+    #logo{
+        width: 5em;
+    }
+
+    .header_nav_element > a {
+        font-size: 1.0em;
+    }
   }
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -191,5 +207,15 @@ a > * {
       -ms-flex: 100%;
       flex: 100%;
       max-width: 100%;
+    }
+    .section{
+        padding: 0 1em;
+    }
+
+    #logo{
+        width: 4em;
+    }
+    .header_nav_element > a {
+        font-size: 0.9em;
     }
   }
