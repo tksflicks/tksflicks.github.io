@@ -151,8 +151,8 @@ a > * {
     height: 3px;
     margin-bottom: 5px;
     position: relative;
-    
-    background: black;
+    border-radius: 2px;
+    background: rgb(80,80,80);
     
     z-index: 1;
     
@@ -293,6 +293,51 @@ a > * {
     vertical-align: middle;
     width: 100%;
   }
+
+.img-modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.85);
+    z-index: 2 ;
+    display:flex;
+    align-items: center;
+    left:-100%;
+    transition: left 1s;
+}
+.img-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 0 ;
+}
+
+.arrow{
+    padding: 3em;
+    cursor: pointer;
+}
+
+.img-container > img{
+    max-width: 100%;
+    width: auto; 
+    max-height: 100%; 
+    
+}
+
+#close_modal{
+    position: absolute;
+    top:1em;
+    right:3em;
+    cursor: pointer;
+}
+
+
+
+  /* MODAL */
+
+  
   
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
@@ -392,8 +437,35 @@ a > * {
         transition:top 1s;
     
     }
+    .arrow{
+        z-index: 5;
+        padding: 1em;
+    }
+    #close_modal{
+        right:1em;
+        z-index: 6;
+    }
+    .img-modal{
+        z-index: 3;
+        justify-content: space-between;
+    }
+    .img-container{
+        width: 100%;
+        height: 100%;
 
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3em 1em;
+        z-index: 3;
+        
+    }
 
+    .img-container > img{
+        height: fit-content;
+        width: 100%;
+    }
 
 
   }
