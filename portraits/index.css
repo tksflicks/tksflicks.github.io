@@ -86,26 +86,9 @@ header > a{
     width: 100%;
   }
 
-@media screen and (max-width: 800px) {
-
-    .nav_bar{
-        padding: 1em 2em;
-    }
-    .section{
-        padding: 0 2em;
-    }
-
-    #logo{
-        width: 5em;
-    }
-
-    .header_nav_element > a {
-        font-size: 1.0em;
-    }
-}
   
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
     .column {
         -ms-flex: 100%;
         flex: 100%;

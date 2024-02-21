@@ -19,10 +19,10 @@
     margin-bottom: 1em;
 
 
-    padding:0.1em 0.3em;
+    /* padding:0.1em 0.3em; */
     letter-spacing: 6px;
-    background: #2e335c;
-    color:white;
+    /* background: #2e335c; */
+    color:#2e335c;
 }
 
 .column2 > p{
@@ -64,26 +64,10 @@
     width: 100%;
   }
 
-@media screen and (max-width: 950px) {
 
-    .nav_bar{
-        padding: 1em 2em;
-    }
-    .section{
-        padding: 0 1em;
-    }
-
-    #logo{
-        width: 5em;
-    }
-
-    .header_nav_element > a {
-        font-size: 1.0em;
-    }
-}
-  
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
+
     .column1 {
         -ms-flex: 100%;
         flex: 100%;
@@ -102,7 +86,6 @@
         -ms-flex-wrap: wrap; /* IE10 */
         flex-wrap: wrap;
         margin: 2em 0;
-        padding: 0 1em;
       }
 
     .section{

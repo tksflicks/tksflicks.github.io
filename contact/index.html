@@ -24,9 +24,9 @@
         </div>
         <div class="nav_wrap">
             <nav class="main_nav_list">
-                <div class="header_nav_element"><a href="../about">ABOUT</a></div>
-                <div class="header_nav_element"><a href="../portfolio">PORTFOLIO</a></div>
-                <div class="header_nav_element"><a href="./">CONTACT</a></div>
+                <div class="header_nav_list"><a href="../about">ABOUT</a></div>
+                <div class="header_nav_list"><a href="../portfolio">PORTFOLIO</a></div>
+                <div class="header_nav_list"><a href="./">CONTACT</a></div>
             </nav>
         </div>
         <div class="nav_socials">
@@ -34,6 +34,11 @@
                 <a href="https://www.instagram.com/tksflicks?igsh=MTI3N3B1MGw2ZnNjeg==" target="_blank" rel="noopener noreferrer">
                     <img id="insta" src="../media/logo/instagram-logo.svg" alt="">
                 </a>
+                <input type="checkbox" id="menu_toggle">
+        
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </div>
@@ -41,10 +46,10 @@
     <div class="section">
         <div class="row"> 
             <div class="column">
-                <h1>Contact</h1>
+                <h1>CONTACT</h1>
 
                 <div class="container">
-                  <form action="/action_page.php" >
+                  <form action="https://postend.vercel.app/n/gAAAAABl1MsVoENRskeuahX40hAfQrpAm2HwEUAD4-yRfnJA5zn7tEH6WeYL8KI9uykwSy2XUNRGzztRaEnCKU1keXhStaGZJF-R_McrQ7xhDmLDqpTYC0zqFhVFVUVNqE9uKsSU4orftnG3lnIsZtLM1iEor7kuUcp0qD_DoYFJcWCLbhGUWxRfoACqOdQxFylZnmo6V0Qu" method="POST">
                     <div style="display: flex; align-items: center; width: 100%;">
                         <div style="width: 50%; margin-right:10px;">
                             <label for="fname">First Name</label>
@@ -71,11 +76,20 @@
                 </div>
             </div>
             <div class="column">
-                    <p><strong>Email:</strong> tkimphoto@gmail.com</p>
-                    <p><strong>Instagram:</strong> @tksflicks</p>
-
+                
+                    <div class="wrap_contact">
+                        <img src="../media/logo/mail.svg">
+                        <p>tkimphoto@gmail.com</p>
+                    </div>
+                    <div class="wrap_contact">
+                        <img style=" width: 1.1em;" src="../media/logo/instagram-logo.svg">
+                        <p>@tksflicks</p>
+                    </div>
             </div>  
           </div>
     </div>
 </body>
+<footer>
+    <h4>© 2024 Taekyung Kim All rights reserved</h4>
+</footer>
 </html>

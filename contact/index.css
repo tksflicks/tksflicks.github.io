@@ -52,27 +52,17 @@ input[type=text], select, textarea {
     font-size: 1.5em;
 
   }
-  p > strong {
-    font-weight: 600;
+
+  .wrap_contact{
+    display: flex;
+    align-items: center;
   }
-
-@media screen and (max-width: 950px) {
-
-    .nav_bar{
-        padding: 1em 2em;
-    }
-    .section{
-        padding: 0 1em;
-    }
-
-    #logo{
-        width: 5em;
-    }
-
-    .header_nav_element > a {
-        font-size: 1.0em;
-    }
-}
+  .wrap_contact > img{
+    width: 1.3em;
+    padding: 0;
+    margin: 0;
+    margin-right: 0.5em;
+  }
   
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
@@ -88,7 +78,6 @@ input[type=text], select, textarea {
         -ms-flex-wrap: wrap; /* IE10 */
         flex-wrap: wrap;
         margin: 2em 0;
-        padding: 0 1em;
       }
 
     .section{

@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://use.typekit.net/uiq0inf.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
     <title>Home</title>
@@ -14,17 +16,18 @@
 
 <body>
     <div class="nav_bar">
-        
         <div class="nav_wrap_logo"> 
             <a href="./">
                 <img id="logo" src="./media/logo/tks_flicks_logo.svg" alt="">
             </a>
         </div>
+        
+
         <div class="nav_wrap">
             <nav class="main_nav_list">
-                <div class="header_nav_element"><a href="./about">ABOUT</a></div>
-                <div class="header_nav_element"><a href="./portfolio">PORTFOLIO</a></div>
-                <div class="header_nav_element"><a href="./contact">CONTACT</a></div>
+                <div class="header_nav_list"><a href="./about">ABOUT</a></div>
+                <div class="header_nav_list"><a href="./portfolio">PORTFOLIO</a></div>
+                <div class="header_nav_list"><a href="./contact">CONTACT</a></div>
             </nav>
         </div>
         <div class="nav_socials">
@@ -32,6 +35,11 @@
                 <a href="https://www.instagram.com/tksflicks?igsh=MTI3N3B1MGw2ZnNjeg==" target="_blank" rel="noopener noreferrer">
                     <img id="insta" src="./media/logo/instagram-logo.svg" alt="">
                 </a>
+                <input type="checkbox" id="menu_toggle">
+
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </div>
@@ -77,4 +85,7 @@
           </div>
     </div>
 </body>
+<footer>
+    <h4>© 2024 Taekyung Kim All rights reserved</h4>
+</footer>
 </html>
