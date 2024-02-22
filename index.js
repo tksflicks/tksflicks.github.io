@@ -43,13 +43,13 @@ $(function() {
             console.log(img_ind)
             $("#modal_img").attr("src", this.currentSrc);
             $("html").css('overflow','clip');
-            $(".img-modal").css('left','0');
+            $(".img-modal").css('top','0');
         });
     })
 
     $("#close_modal").click(function(){
-        $(".img-modal").css('transition','left 1s');
-        $(".img-modal").css('left','-100%');
+        $(".img-modal").css('transition','top 0.5s');
+        $(".img-modal").css('top','-100%');
         $("html").css('overflow','scroll');
 
     })

@@ -302,8 +302,8 @@ a > * {
     z-index: 2 ;
     display:flex;
     align-items: center;
-    left:-100%;
-    transition: left 1s;
+    top:-100%;
+    transition: top 0.5s;
 }
 .img-container{
     width: 100%;
@@ -463,8 +463,8 @@ a > * {
     }
 
     .img-container > img{
-        height: fit-content;
-        width: 100%;
+        /* height: fit-content;
+        width: 100%; */
     }
 
 
