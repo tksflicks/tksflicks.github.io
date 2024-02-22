@@ -44,7 +44,7 @@
 
 .row {
     display: grid;
-    grid-template-rows:repeat(2, 20em);
+    grid-template-rows:repeat(1, 25em);
     grid-template-columns: repeat(2, 1fr);
     
     grid-gap: 1em;
@@ -70,15 +70,22 @@
     padding:0 3em;
   }
 
-  @media screen and (max-width: 900px) {
+
+
+  @media screen and (max-width: 1000px) {
 
     .row {
 
-        grid-template-rows: repeat(2, 13em);
+        grid-template-rows: repeat(1, 17.5em);
 
+    }
+    .section{
+        padding: 2.5em;
     }
 
   }
+
+ 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 650px) {
     .column {

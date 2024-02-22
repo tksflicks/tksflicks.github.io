@@ -64,9 +64,17 @@
     width: 100%;
   }
 
+  @media screen and (max-width: 1000px) {
+    .column2{
+        padding:0 0 0 2em;
+    }
+
+  }
+
+
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
 
     .column1 {
         -ms-flex: 100%;
@@ -93,7 +101,7 @@
     }
 
     #logo{
-        width: 4em;
+        width: 5em;
     }
     .header_nav_element > a {
         font-size: 0.9em;

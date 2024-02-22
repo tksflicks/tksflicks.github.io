@@ -18,6 +18,8 @@ $(function() {
     var srcArr = [];
 
 
+
+
     for(var i = 0; i < col_len; i++){
         for(var j = 0; j < matrix_img.length; j++){
             //console.log(j)
@@ -26,6 +28,47 @@ $(function() {
             srcArr.push(matrix_img[j][i].currentSrc);
         };
     };  
+
+
+ 
+    // This will execute whenever the window is resized
+    console.log(window.matchMedia('screen and (max-width: 650px)').matches)
+    if (window.matchMedia('screen and (max-width: 650px)').matches) {
+        
+        console.log("IT HPdsjf")
+        newArray = all_imgs;
+        for(var i = 0; i < newArray.length; i++){
+            srcArr[i] = all_imgs[i].currentSrc;
+        }
+    }
+
+    if (window.matchMedia('screen and (max-width: 1000px)').matches) {
+        var arr1 = all_imgs.slice(0,col_len);
+        var arr2 = all_imgs.slice(2*col_len,(3*col_len))
+        var arr3 = all_imgs.slice(col_len,(2*col_len))
+        var arr4 = all_imgs.slice(3*col_len,(4*col_len))
+        var matrix_img = [
+            $.merge(arr1,arr2),
+            $.merge(arr3,arr4)
+        ];
+
+        newArray = [];
+        srcArr = [];
+        col_len = matrix_img[0].length
+        console.log(matrix_img.length)
+
+        for(var i = 0; i < col_len; i++){
+            for(var j = 0; j < matrix_img.length; j++){
+                //console.log(j)
+                //console.log(matrix_img[j][i])
+                newArray.push(matrix_img[j][i]);
+                srcArr.push(matrix_img[j][i].currentSrc);
+            };
+        };  
+    
+    }
+
+
     
     console.log(newArray)
     console.log(srcArr)
