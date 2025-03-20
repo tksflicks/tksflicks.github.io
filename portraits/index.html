@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="../index.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/uiq0inf.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../index.css">
@@ -15,8 +17,14 @@
 </head>
 
 <body>
+    <div class="img-modal">
+        <span id="close_modal"><img src="../media/logo/clsoe.svg" alt=""></span>
+        <span class="arrow" id="back_modal"><img src="../media/logo/back_arrow_white.svg" alt=""></span>
+        <div class="img-container"><img id="modal_img" src="../media/Nice Iceland Photos/one.jpg" alt=""></div>
+        <span class="arrow" id="forward_modal"><img src="../media/logo/forward.svg" alt=""></span>
+    </div>
+
     <div class="nav_bar">
-        
         <div class="nav_wrap_logo"> 
             <a href="../">
                 <img id="logo" src="../media/logo/tks_flicks_logo.svg" alt="">
@@ -35,7 +43,6 @@
                     <img id="insta" src="../media/logo/instagram-logo.svg" alt="">
                 </a>
                 <input type="checkbox" id="menu_toggle">
-        
                 <span></span>
                 <span></span>
                 <span></span>
@@ -43,12 +50,53 @@
         </div>
     </div>
 
+
+
+
+
     <div class="section">
         <header>
             <a href="../portfolio/"><img src="../media/logo/back_arrow.svg" alt=""></a>
             <h1>PORTRAITS</h1>
         </header>
-
+        <div class="row"> 
+            <div class="column">
+              <img src="../media/portrait/gnc_launch/IMG_2270.jpg" style="width:100%">
+              <img src="../media/portrait/gnc_launch/IMG_2288.jpg" style="width:100%">
+              <img src="../media/portrait/gnc_launch/IMG_2292.jpg" style="width:100%">
+              <img src="./media/Nice Iceland Photos/[000512].jpg" style="width:100%">
+              <img src="./media/Nice Iceland Photos/[000642].jpg" style="width:100%">
+              <img src="./media/Nice Iceland Photos/[000670].jpg" style="width:100%">
+              <img src="./media/Nice Iceland Photos/[000678].jpg" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="../media/portrait/gnc_launch/IMG_2302.jpg" style="width:100%">
+              <img src="../media/portrait/gnc_launch/IMG_2305.jpg" style="width:100%">
+              <img src="../media/portrait/gnc_launch/IMG_2341.jpg" style="width:100%">
+              <img src="./media/Nice Iceland Photos/[000724].jpg" style="width:100%">
+              <img src="./media/Nice Iceland Photos/[000740].jpg" style="width:100%">
+              <img src="./media/Nice Iceland Photos/[000734].jpg" style="width:100%">
+              <img src="./media/Nice Iceland Photos/[000756].jpg" style="width:100%">
+            </div>  
+            <div class="column">
+              <img src="../media/portrait/gnc_launch/IMG_2343.jpg" style="width:100%">
+              <img src="./media/Nice Iceland Photos/[000762].jpg" style="width:100%">
+              <img src="./media/Nice Iceland Photos/[000810].jpg" style="width:100%">
+              <img src="./media/Nice Iceland Photos/[000818].jpg" style="width:100%">
+              <img src="./media/Nice Iceland Photos/[000892].jpg" style="width:100%">
+              <img src="./media/Nice Iceland Photos/[000940].jpg" style="width:100%">
+              <img src="./media/Nice Iceland Photos/[000980].jpg" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="./media/Nice Iceland Photos/[001020].jpg" style="width:100%">
+              <img src="./media/Nice Iceland Photos/[001034].jpg" style="width:100%">
+              <img src="./media/Nice Iceland Photos/[001094].jpg" style="width:100%">
+              <img src="./media/Nice Iceland Photos/[000386].jpg" style="width:100%">
+              <img src="./media/Nice Iceland Photos/[001162].jpg" style="width:100%">
+              <img src="./media/Nice Iceland Photos/[001120].jpg" style="width:100%">
+              <img src="./media/Nice Iceland Photos/IMG_0055.jpg" style="width:100%">
+            </div>
+          </div>
     </div>
 
 
