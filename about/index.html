@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://use.typekit.net/uiq0inf.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="./index.css">
 
     <title>About</title>
+    <!-- Chrome/Edge: start loading a page as soon as its link is hovered/touched, so navigation is instant -->
+    <script type="speculationrules">
+    { "prerender": [{ "where": { "href_matches": "/*" }, "eagerness": "moderate" }] }
+    </script>
 </head>
 
 <body>
@@ -44,26 +45,28 @@
         </div>
     </div>
 
-    <div class="section">
-        <div class="row"> 
-            <div class="column1">
-                <div class="cover">
-                    <img src="../media/logo/IMG_1768 (1).jpg" >
-                </div>
-            </div>
-            <div class="column2">
-                    <h1>TAEKYUNG KIM</h1>
-                    <p>I was born in Busan, Korea, and raised in Colorado since I was two. Living near the foothills of the Rockies, I lived in a city of mountains. It was a beautiful city made of not concrete but skyscrapers of limestone and shale.
-                        <br><br>
-                        With more trees and rocky protrusions than people, my love for photography began with capturing the quiet landscape. But, through my years of taking photos, I've found the joy in taking pictures of the people around me!
-                        <br><br>
-                        I am primarily based in Atlanta, Georgia; I photograph to capture a new landscape of diverse cultures, trees, and concrete skyscrapers.</p>
-                </div>  
+    <main class="section about">
+        <div class="about-photos">
+            <img class="about-photo about-photo--main" src="../media/web/logo/tk_1-1200.jpg" srcset="../media/web/logo/tk_1-600.jpg 600w, ../media/web/logo/tk_1-1200.jpg 1200w" sizes="(max-width: 1000px) 100vw, 45vw" width="1895" height="2843" alt="Taekyung standing in front of a mountain">
+            <img class="about-photo" src="../media/web/logo/tk_2-1200.jpg" srcset="../media/web/logo/tk_2-600.jpg 600w, ../media/web/logo/tk_2-1200.jpg 1200w" sizes="(max-width: 1000px) 50vw, 22vw" width="4898" height="3265" alt="Taekyung photographing a rocky ridge">
+            <img class="about-photo" src="../media/web/logo/tk_3-1200.jpg" srcset="../media/web/logo/tk_3-600.jpg 600w, ../media/web/logo/tk_3-1200.jpg 1200w" sizes="(max-width: 1000px) 50vw, 22vw" width="3000" height="2000" alt="Taekyung photographing across the water">
+        </div>
 
-          </div>
-    </div>
+        <div class="about-text">
+            <p class="about-eyebrow">About</p>
+            <h1 class="about-title">Taekyung Kim</h1>
+
+            <p>I was born in Busan, Korea, and grew up in Colorado from the age of two. Home sat in the foothills of the Rockies &mdash; a city whose skyline was made not of concrete, but of limestone and shale.</p>
+
+            <p>With more trees and rocky ridgelines than people, it was the quiet landscape that first drew me to photography. Over the years, though, my lens kept turning toward the people around me, and capturing them has become just as much of a joy.</p>
+
+            <p>Today I&rsquo;m based in Atlanta, Georgia, photographing a new kind of landscape &mdash; one of diverse cultures, tall trees, and, this time, real concrete skyscrapers.</p>
+
+            <a class="about-cta" href="../contact/">Let&rsquo;s work together &rarr;</a>
+        </div>
+    </main>
 </body>
 <footer>
-    <h4>© 2024 Taekyung Kim All rights reserved</h4>
+    <h4>© 2026 Taekyung Kim All rights reserved</h4>
 </footer>
 </html>

@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://use.typekit.net/uiq0inf.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="./index.css">
+    <script src="../media/web/photos.js" defer></script>
 
-    <title>Portraits</title>
+    <title>Portfolio | TK Flicks</title>
+    <!-- Chrome/Edge: start loading a page as soon as its link is hovered/touched, so navigation is instant -->
+    <script type="speculationrules">
+    { "prerender": [{ "where": { "href_matches": "/*" }, "eagerness": "moderate" }] }
+    </script>
 </head>
 
 <body>
@@ -44,31 +46,60 @@
         </div>
     </div>
 
-    <div class="section">
-        <div class="row"> 
-            <div class="column">
-                <a href="../portraits/">
-                    <div class="cover">
-                        
-                        <h1>PORTRAITS</h1>
-                        <img src="../media/portrait/gnc_walk_back.jpg" >
-                    
-                    </div>
-                    </a>
-            </div>
-            <div class="column">
-                <a href="../landscapes/">
-                    <div class="cover">
-                        <h1>LANDSCAPES</h1>
-                        <img src="../media/Nice Iceland Photos/one.jpg" >
-                    </div>  
-                </a>
+    <main class="section portfolio">
+        <header class="portfolio-header">
+            <h1 class="portfolio-eyebrow">Portfolio</h1>
+        </header>
 
-            </div>  
-          </div>
-    </div>
+        <div class="portfolio-cards">
+            <a class="portfolio-card" href="../gallery/?folder=portrait" data-folder="portrait">
+                <span class="portfolio-card-img">
+                    <img src="../media/web/portrait/band_photos/IMG_4802-1200.jpg" srcset="../media/web/portrait/band_photos/IMG_4802-600.jpg 600w, ../media/web/portrait/band_photos/IMG_4802-1200.jpg 1200w, ../media/web/portrait/band_photos/IMG_4802-2000.jpg 2000w" sizes="(max-width: 650px) 100vw, 50vw" width="2000" height="3000" alt="">
+                </span>
+                <span class="portfolio-card-text">
+                    <span>
+                        <span class="portfolio-card-title">Portraits</span>
+                        <span class="portfolio-card-count"></span>
+                    </span>
+                    <span class="portfolio-card-cta">Explore &rarr;</span>
+                </span>
+            </a>
+            <a class="portfolio-card" href="../gallery/?folder=landscape" data-folder="landscape">
+                <span class="portfolio-card-img">
+                    <img src="../media/web/landscape/iceland/one-1200.jpg" srcset="../media/web/landscape/iceland/one-600.jpg 600w, ../media/web/landscape/iceland/one-1200.jpg 1200w, ../media/web/landscape/iceland/one-2000.jpg 2000w" sizes="(max-width: 650px) 100vw, 50vw" width="3984" height="2381" alt="">
+                </span>
+                <span class="portfolio-card-text">
+                    <span>
+                        <span class="portfolio-card-title">Landscapes</span>
+                        <span class="portfolio-card-count"></span>
+                    </span>
+                    <span class="portfolio-card-cta">Explore &rarr;</span>
+                </span>
+            </a>
+        </div>
+    </main>
+
+    <script>
+        // "5 albums · 288 photos" under each card, counted from media/web/photos.js
+        document.addEventListener('DOMContentLoaded', function() {
+            var photos = Object.keys(window.PHOTOS || {});
+            document.querySelectorAll('.portfolio-card').forEach(function(card) {
+                var prefix = card.dataset.folder + '/';
+                var inFolder = photos.filter(function(rel) { return rel.indexOf(prefix) === 0; });
+                var albums = {};
+                inFolder.forEach(function(rel) {
+                    var rest = rel.slice(prefix.length);
+                    if (rest.indexOf('/') !== -1) albums[rest.split('/')[0]] = true;
+                });
+                var n = Object.keys(albums).length;
+                if (!inFolder.length) return;
+                card.querySelector('.portfolio-card-count').textContent =
+                    n + (n === 1 ? ' album' : ' albums') + ' · ' + inFolder.length + ' photos';
+            });
+        });
+    </script>
 </body>
 <footer>
-    <h4>© 2024 Taekyung Kim All rights reserved</h4>
+    <h4>© 2026 Taekyung Kim All rights reserved</h4>
 </footer>
 </html>

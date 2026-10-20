@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://use.typekit.net/uiq0inf.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="./index.css">
 
     <title>Contact</title>
+    <!-- Chrome/Edge: start loading a page as soon as its link is hovered/touched, so navigation is instant -->
+    <script type="speculationrules">
+    { "prerender": [{ "where": { "href_matches": "/*" }, "eagerness": "moderate" }] }
+    </script>
 </head>
 
 <body>
@@ -43,53 +44,98 @@
         </div>
     </div>
 
-    <div class="section">
-        <div class="row"> 
-            <div class="column">
-                <h1>CONTACT</h1>
+    <main class="section contact">
+        <div class="contact-intro">
+            <p class="contact-eyebrow">Contact</p>
+            <h1 class="contact-title">Let&rsquo;s create something together.</h1>
+            <p class="contact-lede">Portraits, events, collaborations, or just saying hi &mdash; send a message and I&rsquo;ll get back to you soon.</p>
 
-                <div class="container">
-                  <form action="https://postend.vercel.app/n/gAAAAABl1MsVoENRskeuahX40hAfQrpAm2HwEUAD4-yRfnJA5zn7tEH6WeYL8KI9uykwSy2XUNRGzztRaEnCKU1keXhStaGZJF-R_McrQ7xhDmLDqpTYC0zqFhVFVUVNqE9uKsSU4orftnG3lnIsZtLM1iEor7kuUcp0qD_DoYFJcWCLbhGUWxRfoACqOdQxFylZnmo6V0Qu" method="POST">
-                    <div style="display: flex; align-items: center; width: 100%;">
-                        <div style="width: 50%; margin-right:10px;">
-                            <label for="fname">First Name</label>
-                            <input type="text" id="fname" name="firstname" required>
-                            
-                        </div>
-                        <div style="width: 50%;">
-                            <label for="lname">Last Name</label>
-                            <input type="text" id="lname" name="lastname" required>
-                        </div>
-                    
+            <ul class="contact-links">
+                <li>
+                    <a class="contact-link" href="mailto:tkimphoto@gmail.com">
+                        <span><small>Email</small>tkimphoto@gmail.com</span>
+                    </a>
+                    <button type="button" class="contact-copy" data-copy="tkimphoto@gmail.com" aria-label="Copy email address">Copy</button>
+                </li>
+                <li>
+                    <a class="contact-link" href="https://www.instagram.com/tksflicks" target="_blank" rel="noopener noreferrer">
+                        <span><small>Instagram</small>@tksflicks</span>
+                    </a>
+                </li>
+                <li>
+                    <div class="contact-link">
+                        <span><small>Based in</small>Atlanta, Georgia</span>
                     </div>
-                    <label for="lname">Email Address</label>
-                    <input type="text" id="eaddress" name="email" required>
+                </li>
+            </ul>
+        </div>
 
-                    <label for="lname">Subject</label>
-                    <input type="text" id="sline" name="subject" required>
-                
-                    <label for="subject">Message</label>
-                    <textarea id="mainmessage" name="message" style="height:200px" required></textarea>
-                
-                    <input type="submit" value="Submit">
-                  </form>
+        <form class="contact-form" action="https://postend.vercel.app/n/gAAAAABl1MsVoENRskeuahX40hAfQrpAm2HwEUAD4-yRfnJA5zn7tEH6WeYL8KI9uykwSy2XUNRGzztRaEnCKU1keXhStaGZJF-R_McrQ7xhDmLDqpTYC0zqFhVFVUVNqE9uKsSU4orftnG3lnIsZtLM1iEor7kuUcp0qD_DoYFJcWCLbhGUWxRfoACqOdQxFylZnmo6V0Qu" method="POST">
+            <fieldset class="contact-chips">
+                <legend>What&rsquo;s this about?</legend>
+                <label><input type="radio" name="inquiry" value="Portraits"><span>Portraits</span></label>
+                <label><input type="radio" name="inquiry" value="Events"><span>Events</span></label>
+                <label><input type="radio" name="inquiry" value="Collaboration"><span>Collaboration</span></label>
+                <label><input type="radio" name="inquiry" value="Other"><span>Other</span></label>
+            </fieldset>
+
+            <div class="contact-pair">
+                <div class="field">
+                    <label for="fname">First name</label>
+                    <input type="text" id="fname" name="firstname" autocomplete="given-name" required>
+                </div>
+                <div class="field">
+                    <label for="lname">Last name</label>
+                    <input type="text" id="lname" name="lastname" autocomplete="family-name" required>
                 </div>
             </div>
-            <div class="column">
-                
-                    <div class="wrap_contact">
-                        <img src="../media/logo/mail.svg">
-                        <p>tkimphoto@gmail.com</p>
-                    </div>
-                    <div class="wrap_contact">
-                        <img style=" width: 1.1em;" src="../media/logo/instagram-logo.svg">
-                        <p>@tksflicks</p>
-                    </div>
-            </div>  
-          </div>
-    </div>
+            <div class="field">
+                <label for="eaddress">Email address</label>
+                <input type="email" id="eaddress" name="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+                <label for="sline">Subject</label>
+                <input type="text" id="sline" name="subject" required>
+            </div>
+            <div class="field">
+                <label for="mainmessage">Message</label>
+                <textarea id="mainmessage" name="message" rows="6" required></textarea>
+            </div>
+
+            <button type="submit" class="contact-submit">
+                <span>Send message</span>
+            </button>
+        </form>
+    </main>
+
+    <script>
+        // Copy-email button
+        document.querySelectorAll('.contact-copy').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                navigator.clipboard.writeText(btn.dataset.copy).then(function() {
+                    btn.textContent = 'Copied';
+                    btn.classList.add('is-done');
+                    setTimeout(function() { btn.textContent = 'Copy'; btn.classList.remove('is-done'); }, 1800);
+                });
+            });
+        });
+
+        // Show a sending state so a slow submit doesn't look like nothing happened
+        document.querySelector('.contact-form').addEventListener('submit', function() {
+            var btn = this.querySelector('.contact-submit');
+            btn.disabled = true;
+            btn.querySelector('span').textContent = 'Sending…';
+        });
+
+        // Coming back with the Back button restores the page as it was; re-enable the button
+        window.addEventListener('pageshow', function() {
+            var btn = document.querySelector('.contact-submit');
+            btn.disabled = false;
+            btn.querySelector('span').textContent = 'Send message';
+        });
+    </script>
 </body>
 <footer>
-    <h4>© 2024 Taekyung Kim All rights reserved</h4>
+    <h4>© 2026 Taekyung Kim All rights reserved</h4>
 </footer>
 </html>

@@ -4,28 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://use.typekit.net/uiq0inf.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script>document.documentElement.classList.add('js')</script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
+    <script src="./media/web/photos.js" defer></script>
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="./index.css">
     <link rel="icon" type="image/x-icon" href="./media/logo/tk_flick_logo-01.png">
 
     <title>Home</title>
+    <!-- Chrome/Edge: start loading a page as soon as its link is hovered/touched, so navigation is instant -->
+    <script type="speculationrules">
+    { "prerender": [{ "where": { "href_matches": "/*" }, "eagerness": "moderate" }] }
+    </script>
 </head>
 
 <body>
-    
-    <div class="img-modal">
-        <span id="close_modal"><img src="./media/logo/clsoe.svg" alt=""></span>
-        <span class="arrow" id="back_modal"><img src="./media/logo/back_arrow_white.svg" alt=""></span>
-        <div class="img-container"><img id="modal_img" src="./media/Nice Iceland Photos/one.jpg" alt=""></div>
-        <span class="arrow" id="forward_modal"><img src="./media/logo/forward.svg" alt=""></span>
-    </div>
-
-
     <div class="nav_bar">
         <div class="nav_wrap_logo"> 
             <a href="./">
@@ -56,47 +50,10 @@
     </div>
 
     <div class="section">
-        <div class="row"> 
-            <div class="column">
-              <img src="./media/Nice Iceland Photos/[000384].jpg" style="width:100%">
-              <img src="./media/Nice Iceland Photos/[001120].jpg" style="width:100%">
-              <img src="./media/Nice Iceland Photos/[000498].jpg" style="width:100%">
-              <img src="./media/Nice Iceland Photos/[000512].jpg" style="width:100%">
-              <img src="./media/Nice Iceland Photos/[000642].jpg" style="width:100%">
-              <img src="./media/Nice Iceland Photos/[000670].jpg" style="width:100%">
-              <img src="./media/Nice Iceland Photos/[000678].jpg" style="width:100%">
-            </div>
-            <div class="column">
-              <img src="./media/Nice Iceland Photos/[000698].jpg" style="width:100%">
-              <img src="./media/Nice Iceland Photos/[000704].jpg" style="width:100%">
-              <img src="./media/Nice Iceland Photos/IMG_1325.jpg" style="width:100%">
-              <img src="./media/Nice Iceland Photos/[000724].jpg" style="width:100%">
-              <img src="./media/Nice Iceland Photos/[000740].jpg" style="width:100%">
-              <img src="./media/Nice Iceland Photos/[000734].jpg" style="width:100%">
-              <img src="./media/Nice Iceland Photos/[000756].jpg" style="width:100%">
-            </div>  
-            <div class="column">
-              <img src="./media/Nice Iceland Photos/[000758].jpg" style="width:100%">
-              <img src="./media/Nice Iceland Photos/[000762].jpg" style="width:100%">
-              <img src="./media/Nice Iceland Photos/[000810].jpg" style="width:100%">
-              <img src="./media/Nice Iceland Photos/[000818].jpg" style="width:100%">
-              <img src="./media/Nice Iceland Photos/[000892].jpg" style="width:100%">
-              <img src="./media/Nice Iceland Photos/[000940].jpg" style="width:100%">
-              <img src="./media/Nice Iceland Photos/[000980].jpg" style="width:100%">
-            </div>
-            <div class="column">
-              <img src="./media/Nice Iceland Photos/[001020].jpg" style="width:100%">
-              <img src="./media/Nice Iceland Photos/[001034].jpg" style="width:100%">
-              <img src="./media/Nice Iceland Photos/[001094].jpg" style="width:100%">
-              <img src="./media/Nice Iceland Photos/[000386].jpg" style="width:100%">
-              <img src="./media/Nice Iceland Photos/[001162].jpg" style="width:100%">
-              <img src="./media/Nice Iceland Photos/[001120].jpg" style="width:100%">
-              <img src="./media/Nice Iceland Photos/IMG_0055.jpg" style="width:100%">
-            </div>
-          </div>
+        <div class="row gallery" data-folder="landscape, portrait"></div>
     </div>
 </body>
 <footer>
-    <h4>© 2024 Taekyung Kim All rights reserved</h4>
+    <h4>© 2026 Taekyung Kim All rights reserved</h4>
 </footer>
 </html>

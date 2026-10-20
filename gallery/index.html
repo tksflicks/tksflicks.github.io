@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.classList.add('js')</script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
+    <script src="../media/web/photos.js" defer></script>
+    <script src="../index.js" defer></script>
+    <link rel="stylesheet" href="https://use.typekit.net/uiq0inf.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" type="image/x-icon" href="../media/logo/tk_flick_logo-01.png">
+
+    <!-- Title, cards and photos are filled in by index.js from ?folder=... -->
+    <title>Portfolio | TK Flicks</title>
+    <!-- Chrome/Edge: start loading a page as soon as its link is hovered/touched, so navigation is instant -->
+    <script type="speculationrules">
+    { "prerender": [{ "where": { "href_matches": "/*" }, "eagerness": "moderate" }] }
+    </script>
+</head>
+
+<body>
+    <div class="nav_bar">
+        <div class="nav_wrap_logo">
+            <a href="../">
+                <img id="logo" src="../media/logo/tks_flicks_logo.svg" alt="">
+            </a>
+        </div>
+        <div class="nav_wrap">
+            <nav class="main_nav_list">
+                <div class="header_nav_list"><a href="../about">ABOUT</a></div>
+                <div class="header_nav_list"><a href="../portfolio/">PORTFOLIO</a></div>
+                <div class="header_nav_list"><a href="../contact">CONTACT</a></div>
+            </nav>
+        </div>
+        <div class="nav_socials">
+            <div class="header_nav_element">
+                <a href="https://www.instagram.com/tksflicks?igsh=MTI3N3B1MGw2ZnNjeg==" target="_blank" rel="noopener noreferrer">
+                    <img id="insta" src="../media/logo/instagram-logo.svg" alt="">
+                </a>
+                <input type="checkbox" id="menu_toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <main class="section album">
+        <header class="album-header">
+            <a class="album-back" href="../portfolio/" aria-label="Back"><img src="../media/logo/back_arrow.svg" alt=""></a>
+            <div>
+                <h1 class="album-title"></h1>
+                <p class="album-count"></p>
+            </div>
+        </header>
+
+        <div class="album-cards"></div>
+
+        <div class="row gallery"></div>
+    </main>
+</body>
+<footer>
+    <h4>© 2026 Taekyung Kim All rights reserved</h4>
+</footer>
+</html>
